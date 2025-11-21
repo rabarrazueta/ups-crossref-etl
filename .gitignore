@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Base de datos (MUY IMPORTANTE - no subir DBs pesadas)
+*.db
+*.sqlite
+*.sqlite3
+barrazueta_db_ups_crossref.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Apache Superset
+.superset/
+superset.db
+superset_config.py
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Datos sensibles
+.env
+config/credentials.py
+*.key
+
+# Archivos temporales
+*.tmp
+*.bak
+*~
