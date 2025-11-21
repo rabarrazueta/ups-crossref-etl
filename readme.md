@@ -35,89 +35,113 @@ Este proyecto implementa un sistema completo de análisis bibliométrico que:
 
 ## 📁 Estructura del Proyecto
 
-```
 ups-crossref-etl/
 ├── src/
-│   └── barrazueta_pipeline_etl_crossref.py   # Pipeline principal
+│ └── barrazueta_pipeline_etl_crossref.py
 ├── docs/
-│   └── Documentacion-Tecnica-Robinson-Barrazueta.pdf
+│ └── Documentacion-Tecnica-Robinson-Barrazueta.pdf
 ├── data/
-│   └── ups_institucional.csv                  # Datos de entrada
+│ └── ups_institucional.csv
 ├── images/
-│   └── dashboard_screenshot.png               # Capturas del dashboard
+│ └── dashboard_screenshot.png
 ├── README.md
 ├── .gitignore
 └── requirements.txt
-```
+
+text
 
 ## ⚙️ Instalación
 
 ### Requisitos Previos
+
 - Python 3.11 o superior
 - pip (gestor de paquetes de Python)
 
 ### Pasos
 
-1. Clona este repositorio:
-```
+**1. Clona este repositorio:**
+
 git clone https://github.com/TU-USUARIO/ups-crossref-etl.git
 cd ups-crossref-etl
-```
 
-2. Crea un entorno virtual:
-```
+text
+
+**2. Crea un entorno virtual:**
+
 python -m venv venv
-source venv/bin/activate  # En Windows: venv\Scripts\activate
-```
 
-3. Instala las dependencias:
-```
+text
+
+**3. Activa el entorno virtual:**
+
+- En Windows:
+
+venv\Scripts\activate
+
+text
+
+- En Linux/Mac:
+
+source venv/bin/activate
+
+text
+
+**4. Instala las dependencias:**
+
 pip install -r requirements.txt
-```
+
+text
 
 ## 🎯 Uso
 
-1. Configura tu email en el script (línea 12):
-```
+**1. Configura tu email en el script** (línea 12 de `src/barrazueta_pipeline_etl_crossref.py`):
+
 MAILTO = "tu-email@ejemplo.com"
-```
 
-2. Ejecuta el pipeline:
-```
+text
+
+**2. Ejecuta el pipeline:**
+
 python src/barrazueta_pipeline_etl_crossref.py
-```
 
-3. La base de datos se creará automáticamente como `barrazueta_db_ups_crossref.db`
+text
 
-4. Conecta Apache Superset a la base de datos para visualizar los resultados
+**3. Resultado:**
+
+La base de datos se creará automáticamente como `barrazueta_db_ups_crossref.db`
+
+**4. Visualización:**
+
+Conecta Apache Superset a la base de datos SQLite para visualizar los resultados.
 
 ## 📊 Base de Datos
 
 El esquema incluye las siguientes tablas:
-- `obras`: Publicaciones científicas con metadatos completos
-- `autores`: Información de autores únicos
-- `afiliaciones`: Instituciones y afiliaciones académicas
-- `obras_autores`: Relación many-to-many entre obras y autores
-- `autores_afiliaciones`: Relación entre autores y sus afiliaciones
-- `ejecuciones`: Log de auditoría del pipeline
+
+- **obras**: Publicaciones científicas con metadatos completos
+- **autores**: Información de autores únicos
+- **afiliaciones**: Instituciones y afiliaciones académicas
+- **obras_autores**: Relación many-to-many entre obras y autores
+- **autores_afiliaciones**: Relación entre autores y sus afiliaciones
+- **ejecuciones**: Log de auditoría del pipeline
 
 ## 📄 Documentación
 
-Consulta la documentación técnica completa en `docs/Documentacion-Tecnica-Robinson-Barrazueta.pdf`
+Consulta la documentación técnica completa en [`docs/Documentacion-Tecnica-Robinson-Barrazueta.pdf`](docs/Documentacion-Tecnica-Robinson-Barrazueta.pdf)
 
 ## 👨‍💻 Autor
 
 **Robinson Barrazueta**
+
 - Email: rabarrazueta@utpl.edu.ec
 - Universidad Técnica Particular de Loja (UTPL)
 - Universidad Politécnica Salesiana (UPS)
 
 ## 📝 Licencia
 
-Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE para más detalles.
+Este proyecto está bajo la Licencia MIT.
 
 ## 🙏 Agradecimientos
 
 - CrossRef por proporcionar acceso gratuito a su API
 - Apache Superset por la plataforma de visualización
-```
