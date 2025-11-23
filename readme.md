@@ -1,7 +1,8 @@
 ```markdown
 # Pipeline ETL para Análisis Bibliográfico - CrossRef API
 
-Pipeline automatizado de extracción, transformación y carga (ETL) de publicaciones científicas desde la API de CrossRef, con integración a Apache Superset para visualización y análisis de la producción académica de la Universidad Politécnica Salesiana (UPS).
+Pipeline automatizado de extracción, transformación y carga (ETL) de publicaciones científicas desde la API de CrossRef,
+con integración a Apache Superset para visualización y análisis de la producción académica de la Universidad Politécnica Salesiana (UPS).
 
 ![Python](https://img.shields.io/badge/Python-3.11%2B-blue)
 ![SQLite](https://img.shields.io/badge/SQLite-3-green)
