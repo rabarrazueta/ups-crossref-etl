@@ -142,10 +142,6 @@ Consulta la documentación técnica completa en [`docs/Documentacion-Tecnica-Rob
 - Universidad Técnica Particular de Loja (UTPL)
 - Universidad Politécnica Salesiana (UPS)
 
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT.
-
 ## 🙏 Agradecimientos
 
 - CrossRef por proporcionar acceso gratuito a su API
