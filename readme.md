@@ -13,7 +13,11 @@ Este proyecto implementa un sistema completo de análisis bibliométrico que:
 - Extrae datos de publicaciones científicas desde CrossRef API
 - Transforma y normaliza información de autores, afiliaciones e instituciones
 - Carga los datos en una base de datos SQLite relacional normalizada
-- Integra con Apache Superset para dashboards interactivos
+- Integra con Apache Superset para dashboards interactivos.
+
+IMPORTANTE:
+Este proyecto fue realizado como parte de un reto técnico.
+El uso del nombre de la institución es únicamente para fines ilustrativos y el acceso a los datos es completamente público.
 
 ## 🚀 Características
 
