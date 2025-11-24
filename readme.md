@@ -127,8 +127,3 @@ Consulta la documentación técnica completa en [`docs/Documentacion-Tecnica-Rob
 - Email: rabarrazueta@utpl.edu.ec
 - Universidad Técnica Particular de Loja (UTPL)
 - Universidad Politécnica Salesiana (UPS)
-
-## 🙏 Agradecimientos
-
-- CrossRef por proporcionar acceso gratuito a su API
-- Apache Superset por la plataforma de visualización
