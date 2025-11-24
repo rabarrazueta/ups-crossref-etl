@@ -8,7 +8,7 @@ con integración a Apache Superset para visualización y análisis de la producc
 ![SQLite](https://img.shields.io/badge/SQLite-3-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-## 📋 Descripción
+## Descripción
 
 Este proyecto implementa un sistema completo de análisis bibliométrico que:
 - Extrae datos de publicaciones científicas desde CrossRef API
@@ -20,7 +20,7 @@ IMPORTANTE:
 Este proyecto fue realizado como parte de un reto técnico.
 El uso del nombre de la institución es únicamente para fines ilustrativos y el acceso a los datos es completamente público.
 
-## 🚀 Características
+## Características
 
 - **ETL Automatizado**: Extracción con paginación, reintentos y manejo de errores
 - **Normalización de Datos**: Limpieza de afiliaciones, nombres de autores y metadatos
@@ -29,7 +29,7 @@ El uso del nombre de la institución es únicamente para fines ilustrativos y el
 - **Escalable**: Diseñado para procesar grandes volúmenes de publicaciones
 - **Visualización**: Dashboards con filtros interactivos en Apache Superset
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - Python 3.11+
 - SQLite3
@@ -38,7 +38,7 @@ El uso del nombre de la institución es únicamente para fines ilustrativos y el
 - Apache Superset
 - CrossRef REST API
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ups-crossref-etl/
 ├── src/
@@ -53,9 +53,7 @@ ups-crossref-etl/
 ├── .gitignore
 └── requirements.txt
 
-text
-
-## ⚙️ Instalación
+## Instalación
 
 ### Requisitos Previos
 
@@ -69,13 +67,10 @@ text
 git clone https://github.com/TU-USUARIO/ups-crossref-etl.git
 cd ups-crossref-etl
 
-text
-
 **2. Crea un entorno virtual:**
 
 python -m venv venv
 
-text
 
 **3. Activa el entorno virtual:**
 
@@ -83,33 +78,28 @@ text
 
 venv\Scripts\activate
 
-text
 
 - En Linux/Mac:
 
 source venv/bin/activate
 
-text
 
 **4. Instala las dependencias:**
 
 pip install -r requirements.txt
 
-text
 
-## 🎯 Uso
+## Uso
 
 **1. Configura tu email en el script** (línea 12 de `src/barrazueta_pipeline_etl_crossref.py`):
 
 MAILTO = "tu-email@ejemplo.com"
 
-text
 
 **2. Ejecuta el pipeline:**
 
 python src/barrazueta_pipeline_etl_crossref.py
 
-text
 
 **3. Resultado:**
 
@@ -119,7 +109,7 @@ La base de datos se creará automáticamente como `barrazueta_db_ups_crossref.db
 
 Conecta Apache Superset a la base de datos SQLite para visualizar los resultados.
 
-## 📊 Base de Datos
+## Base de Datos
 
 El esquema incluye las siguientes tablas:
 
@@ -130,11 +120,11 @@ El esquema incluye las siguientes tablas:
 - **autores_afiliaciones**: Relación entre autores y sus afiliaciones
 - **ejecuciones**: Log de auditoría del pipeline
 
-## 📄 Documentación
+## Documentación
 
 Consulta la documentación técnica completa en [`docs/Documentacion-Tecnica-Robinson-Barrazueta.pdf`](docs/Documentacion-Tecnica-Robinson-Barrazueta.pdf)
 
-## 👨‍💻 Autor
+## Autor
 
 **Robinson Barrazueta**
 
